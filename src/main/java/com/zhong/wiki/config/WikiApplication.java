@@ -1,15 +1,13 @@
-package com.zhong.wiki;
+package com.zhong.wiki.config;
 
-import org.slf4j.LoggerFactory;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.core.env.Environment;
-
-import java.util.logging.Logger;
 
 @ComponentScan({"com.zhong"})
 @SpringBootApplication
+@MapperScan("com.zhong.wiki.mapper")
 public class WikiApplication {
 
 //    private static final Logger LOG=  LoggerFactory.getLogger(WikiApplication.class);
